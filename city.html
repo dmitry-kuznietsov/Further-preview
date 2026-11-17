@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Further — городской путеводитель для самостоятельных путешествий.">
+<title>City guide — Further</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css"><script defer src="assets/js/cities.js"></script><script defer src="assets/js/city.js"></script>
+</head>
+<body>
+<header class="site-header"><a class="brand" href="index.html">further<span>.</span></a><nav class="main-nav"><a href="index.html#destinations" data-i18n="navExplore">Направления</a><a href="index.html#about" data-i18n="navAbout">О проекте</a></nav><div class="header-actions"><button class="text-button" id="languageToggle">EN</button><button class="icon-button" id="themeToggle" aria-label="Switch theme">◐</button><a class="header-cta" href="index.html#destinations">← <span data-i18n="back">Все города</span></a></div></header>
+<main id="cityPage">
+<section class="city-hero" id="cityHero"><div class="city-hero-shade"></div><div class="city-hero-content"><p class="eyebrow light" id="cityCountry">CITY GUIDE</p><h1 id="cityName">City</h1><p id="cityLead"></p></div><div class="city-hero-bottom"><span>FURTHER CITY GUIDE</span><span id="cityIndex">01 / 09</span></div></section>
+<section class="city-overview section-wrap"><div><p class="eyebrow" data-i18n="overviewEyebrow">GET TO KNOW THE CITY</p><h2 id="overviewTitle"></h2></div><div><p id="cityDescription" class="city-long-copy"></p><div class="city-facts"><div><span data-i18n="bestTime">Лучшее время</span><strong id="bestTime"></strong></div><div><span data-i18n="stay">Сколько дней</span><strong id="stay"></strong></div><div><span data-i18n="budget">Бюджет в день</span><strong id="budget"></strong></div></div></div></section>
+<section class="city-highlights section-wrap"><p class="eyebrow" data-i18n="highlightsEyebrow">DON'T MISS</p><h2 data-i18n="highlightsTitle">Начни знакомство</h2><div class="highlight-grid" id="highlights"></div></section>
+<section class="city-tips"><div class="section-wrap city-tips-inner"><div><p class="eyebrow light" data-i18n="localTips">LOCAL NOTES</p><h2 data-i18n="tipsTitle">Пара полезных<br><em>ориентиров.</em></h2></div><div><div class="tip-line"><span>01</span><p id="tipOne"></p></div><div class="tip-line"><span>02</span><p id="tipTwo"></p></div><div class="tip-line"><span>03</span><p id="tipThree"></p></div><a class="round-link" id="mapLink" target="_blank" rel="noopener"><span data-i18n="openMap">Открыть карту города</span><b>↗</b></a></div></div></section>
+</main>
+<footer class="site-footer"><a class="brand" href="index.html">further<span>.</span></a><p>© <span id="year"></span> Further. <span data-i18n="footer">Исследуй дальше.</span></p><a href="index.html#destinations" data-i18n="allCities">Все направления ↑</a></footer>
+</body></html>
