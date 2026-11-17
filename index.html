@@ -1,67 +1,48 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f3ee">
-  <meta name="description" content="Further — вдохновение и практичные гиды для самостоятельных путешествий.">
-  <title>Further — путешествия, которые ближе</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script defer src="assets/js/cities.js"></script>
-  <script defer src="assets/js/app.js"></script>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f5ef"><meta name="description" content="Further — города, маршруты и вдохновение для самостоятельных путешествий.">
+<title>Further — путешествуй дальше</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+<script defer src="assets/js/cities.js"></script><script defer src="assets/js/app.js"></script>
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Further home">further<span>.</span></a>
-    <nav class="main-nav"><a href="#destinations" data-i18n="navExplore">Направления</a><a href="#about" data-i18n="navAbout">О проекте</a></nav>
-    <div class="header-actions">
-      <button class="text-button" id="languageToggle" aria-label="Switch language">EN</button>
-      <button class="icon-button" id="themeToggle" aria-label="Switch theme">◐</button>
-      <a class="header-cta" href="#destinations" data-i18n="navStart">Найти поездку <span>↗</span></a>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-image"></div>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow light" data-i18n="heroEyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
-        <h1 data-i18n="heroTitle">Мир ближе,<br>чем кажется<span>.</span></h1>
-        <p class="hero-copy" data-i18n="heroText">Города, маршруты и идеи для путешествий, которые хочется прожить.</p>
-        <a class="round-link" href="#destinations"><span data-i18n="heroButton">Исследовать направления</span><b>↘</b></a>
-      </div>
-      <div class="hero-note"><span>01 / 10</span><span data-i18n="heroNote">Путешествуй своим маршрутом</span></div>
-    </section>
-
-    <section class="intro section-wrap">
-      <p class="eyebrow" data-i18n="introEyebrow">GO A LITTLE FURTHER</p>
-      <div class="intro-row"><h2 data-i18n="introTitle">Не просто увидеть.<br><em>Почувствовать место.</em></h2><p data-i18n="introText">Собираем вдохновение и полезную информацию, чтобы планировать поездки было проще — от первого импульса до прогулки по незнакомым улицам.</p></div>
-    </section>
-
-    <section class="destinations section-wrap" id="destinations">
-      <div class="section-heading"><div><p class="eyebrow" data-i18n="destEyebrow">THE WORLD IS OPEN</p><h2 data-i18n="destTitle">Куда дальше?</h2></div><p data-i18n="destSub">Выбери настроение — мы подскажем направление.</p></div>
-      <div class="filters" id="filters">
-        <button class="filter active" data-filter="all" data-i18n="filterAll">Все места</button>
-        <button class="filter" data-filter="culture" data-i18n="filterCulture">Культура</button>
-        <button class="filter" data-filter="sea" data-i18n="filterSea">Море</button>
-        <button class="filter" data-filter="food" data-i18n="filterFood">Еда и атмосфера</button>
-        <button class="filter" data-filter="city" data-i18n="filterCity">Городской ритм</button>
-      </div>
-      <div class="city-grid" id="cityGrid" aria-live="polite"></div>
-    </section>
-
-    <section class="manifesto">
-      <div class="manifesto-photo"></div>
-      <div class="manifesto-copy"><p class="eyebrow light" data-i18n="manifestoEyebrow">TRAVEL IS PERSONAL</p><h2 data-i18n="manifestoTitle">Лучшие истории<br>начинаются с<br><em>любопытства.</em></h2><p data-i18n="manifestoText">Меньше шаблонов. Больше открытий. Твой темп, твой маршрут, твой Further.</p></div>
-    </section>
-
-    <section class="about section-wrap" id="about"><p class="eyebrow" data-i18n="aboutEyebrow">ABOUT FURTHER</p><div class="about-row"><h2 data-i18n="aboutTitle">Планируй меньше.<br><em>Открывай больше.</em></h2><p data-i18n="aboutText">Further — независимый путеводитель по городам и впечатлениям. Здесь собраны идеи, ориентиры по бюджету, локальные советы и места, с которых приятно начать знакомство.</p></div></section>
-  </main>
-
-  <footer class="site-footer"><a class="brand" href="#">further<span>.</span></a><p>© <span id="year"></span> Further. <span data-i18n="footer">Исследуй дальше.</span></p><a href="#top" data-i18n="backTop">Наверх ↑</a></footer>
-</body>
-</html>
+<body class="home-page">
+<header class="home-header">
+<a class="home-brand" href="index.html" aria-label="Further"><span class="brand-mark">⌁</span>Further</a>
+<nav class="home-nav"><a href="#destinations" data-i18n="navCities">Города⌄</a><a href="#features" data-i18n="navRoutes">Маршруты</a><a href="#features" data-i18n="navTips">Советы</a><a href="#about" data-i18n="navAbout">О проекте</a></nav>
+<div class="home-actions"><button class="lang-pill" id="languageToggle">EN</button><button class="home-icon" id="themeToggle" aria-label="Переключить тему">☾</button><a class="home-icon favorite-shortcut" href="#destinations" aria-label="Избранное">♡</a><button class="mobile-menu" aria-label="Меню">☰</button></div>
+</header>
+<main>
+<section class="fresh-hero">
+<div class="fresh-hero-bg"></div><div class="fresh-hero-overlay"></div>
+<div class="fresh-hero-content">
+<p class="fresh-kicker" data-i18n="heroKicker">ПУТЕШЕСТВИЯ · ВДОХНОВЕНИЕ · ОТКРЫТИЯ</p>
+<h1 data-i18n="heroTitle">Откройте<br>для себя <span>Европу</span></h1>
+<p class="fresh-subtitle" data-i18n="heroText">Лучшие города, маршруты и советы<br>для незабываемых путешествий</p>
+<form class="destination-search" id="destinationSearch"><span>⌕</span><input id="citySearch" type="search" placeholder="Куда отправимся?" data-i18n-placeholder="searchPlaceholder"><button type="submit" aria-label="Найти">→</button></form>
+<div class="hero-signature">Travel more<br><i>Discover more</i></div>
+</div>
+<div class="hero-bottom-note"><span>01 — 09</span><span data-i18n="heroFoot">ТВОЁ СЛЕДУЮЩЕЕ ПРИКЛЮЧЕНИЕ НАЧИНАЕТСЯ ЗДЕСЬ</span></div>
+</section>
+<section class="popular-section" id="destinations">
+<div class="popular-heading"><div><p class="section-kicker" data-i18n="popularKicker">ВЫБИРАЙ СВОЁ НАПРАВЛЕНИЕ</p><h2 data-i18n="popularTitle">Популярные направления</h2></div><a href="#allCities" data-i18n="allCitiesLink">Все города <span>↗</span></a></div>
+<div class="destination-cards" id="cityGrid"></div>
+</section>
+<section class="feature-strip" id="features">
+<div class="feature-item"><span class="feature-icon">✧</span><p data-i18n="feature1">Актуальные<br>путеводители</p></div>
+<div class="feature-item"><span class="feature-icon">⌖</span><p data-i18n="feature2">Подробные<br>маршруты</p></div>
+<div class="feature-item"><span class="feature-icon">♨</span><p data-i18n="feature3">Где вкусно<br>поесть</p></div>
+<div class="feature-item"><span class="feature-icon">✳</span><p data-i18n="feature4">Полезные<br>советы</p></div>
+<a class="feature-cta" href="#about" data-i18n="featureCta">Начать путешествие <span>→</span></a>
+</section>
+<section class="travel-story" id="about">
+<div class="story-collage"><img class="story-img story-img-one" src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Цветная улочка итальянского города"><img class="story-img story-img-two" src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=800&q=85" alt="Бирюзовое море"><img class="story-img story-img-three" src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=700&q=85" alt="Средиземноморское побережье"></div>
+<div class="story-copy"><p class="section-kicker" data-i18n="storyKicker">БОЛЬШЕ, ЧЕМ ПРОСТО ПУТЕШЕСТВИЕ</p><h2 data-i18n="storyTitle">Планируйте.<br>Исследуйте.<br><em>Путешествуйте.</em></h2><p data-i18n="storyText">Further — ваш надёжный гид в мире путешествий. Находите вдохновение, открывайте новые места и собирайте поездки, которые останутся с вами.</p><a href="#destinations" class="story-link" data-i18n="storyLink">Найти своё направление <span>↗</span></a></div>
+<div class="flight-doodle" aria-hidden="true">✈</div>
+</section>
+</main>
+<footer class="home-footer"><a class="home-brand" href="#">⌁ Further</a><span>© <span id="year"></span> Further</span><a href="#top" data-i18n="footerTop">Наверх ↑</a></footer>
+</body></html>
