@@ -9,3 +9,74 @@
 .food-item p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}
 .extra-block .city-long-copy{margin:0}
 @media(max-width:800px){.city-extra{grid-template-columns:1fr;gap:45px;padding-bottom:85px}}
+
+
+/* FURTHER / editorial art direction refresh */
+:root{--paper:#f3eee5;--ink:#24231f;--muted:#81796e;--line:#d9d0c3;--accent:#e56b4b;--card:#e9e0d4}
+body.dark{--paper:#171a19;--ink:#f2eee6;--muted:#aaa196;--line:#3c403b;--card:#272d29}
+.brand{font-size:31px;letter-spacing:-2.5px}
+.brand span,.hero h1 span{color:var(--accent)}
+.site-header{height:88px;border-bottom:0;background:var(--paper)}
+.header-cta{background:var(--accent);color:#fff;border-radius:99px;padding:15px 22px}
+.hero{height:min(790px,82vw);min-height:620px;background:#393a34}
+.hero-image{background-image:url('https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=2400&q=90');background-position:center 54%;animation:heroDrift 22s ease-in-out infinite alternate}
+@keyframes heroDrift{from{transform:scale(1)}to{transform:scale(1.075)}}
+.hero-shade{background:linear-gradient(90deg,rgba(20,19,17,.64),rgba(20,19,17,.08) 76%),linear-gradient(0deg,rgba(20,19,17,.3),transparent 55%)}
+.hero-content{left:9%;top:20%;max-width:780px}
+.hero h1{font-size:clamp(68px,9.6vw,136px);font-weight:500;letter-spacing:-.085em;line-height:.91}
+.hero h1 span{color:#f28a68}
+.hero-copy{font-size:17px;max-width:420px}
+.round-link{border-radius:3px;border-color:rgba(255,255,255,.75);padding:9px 10px 9px 18px}
+.round-link b{background:var(--accent);color:white;border-radius:2px}
+.eyebrow{letter-spacing:2.8px;font-size:9px}
+.intro{padding-top:150px;padding-bottom:145px}
+.intro h2,.about h2{font-size:clamp(48px,6.1vw,82px);letter-spacing:-.075em;line-height:.99}
+.intro h2 em,.about h2 em{color:var(--accent)}
+.destinations{padding-bottom:150px}
+.section-heading h2{font-size:clamp(56px,7vw,88px);letter-spacing:-.08em}
+.filters{margin:42px 0 34px}
+.filter{border-radius:2px;padding:12px 18px}
+.filter.active,.filter:hover{background:var(--accent);border-color:var(--accent);color:white}
+.city-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:54px 22px}
+.city-card{grid-column:span 4}
+.city-card:nth-child(3n+2){grid-column:span 4;margin-top:68px}
+.city-card:nth-child(3n){grid-column:span 4}
+.city-image{height:clamp(250px,30vw,410px);background:var(--card)}
+.city-card:nth-child(3n+2) .city-image{height:clamp(220px,25vw,340px)}
+.city-image img{filter:saturate(.86);transition:transform .9s,filter .6s}
+.city-card:hover .city-image img{filter:saturate(1.08);transform:scale(1.055)}
+.city-meta{margin-top:20px}
+.city-meta h3{font-size:27px;letter-spacing:-1.2px}
+.city-arrow{color:var(--accent)}
+.city-desc{font-size:13px}
+.manifesto{height:650px}
+.manifesto-photo{background-image:linear-gradient(90deg,rgba(20,19,17,.7),rgba(20,19,17,.05)),url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=2200&q=90')}
+.manifesto h2{font-size:clamp(58px,7vw,96px);letter-spacing:-.08em}
+.manifesto h2 em{color:#f28a68}
+.about{padding-top:150px;padding-bottom:150px}
+.site-footer{padding-top:38px;padding-bottom:38px}
+.city-hero h1{font-size:clamp(76px,11vw,148px);letter-spacing:-.085em}
+.city-overview h2,.city-highlights h2,.extra-block h2,.city-tips h2{letter-spacing:-.075em}
+.highlight-card{border-radius:0;border-top:2px solid var(--accent);background:var(--card)}
+.city-tips{background:#252a25}
+@media(max-width:800px){
+ .hero{height:78vh;min-height:580px}
+ .hero-content{left:7%;right:7%;top:23%}
+ .intro{padding-top:100px;padding-bottom:95px}
+ .city-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:36px 14px}
+ .city-card,.city-card:nth-child(3n+2),.city-card:nth-child(3n){grid-column:span 1;margin-top:0}
+ .city-image,.city-card:nth-child(3n+2) .city-image{height:260px}
+ .city-card:nth-child(odd){margin-top:28px}
+ .section-heading h2{font-size:58px}
+}
+@media(max-width:520px){
+ .site-header{height:72px}
+ .hero{min-height:570px}
+ .hero h1{font-size:clamp(60px,16vw,82px);letter-spacing:-.08em}
+ .intro h2,.about h2{font-size:50px}
+ .city-image,.city-card:nth-child(3n+2) .city-image{height:205px}
+ .city-meta h3{font-size:21px}
+ .manifesto{height:550px}
+ .manifesto h2{font-size:57px}
+}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
