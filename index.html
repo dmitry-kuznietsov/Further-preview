@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta name="description" content="Further — вдохновение и практичные гиды для самостоятельных путешествий.">
+  <title>Further — путешествия, которые ближе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/cities.js"></script>
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Further home">further<span>.</span></a>
+    <nav class="main-nav"><a href="#destinations" data-i18n="navExplore">Направления</a><a href="#about" data-i18n="navAbout">О проекте</a></nav>
+    <div class="header-actions">
+      <button class="text-button" id="languageToggle" aria-label="Switch language">EN</button>
+      <button class="icon-button" id="themeToggle" aria-label="Switch theme">◐</button>
+      <a class="header-cta" href="#destinations" data-i18n="navStart">Найти поездку <span>↗</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow light" data-i18n="heroEyebrow">YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1 data-i18n="heroTitle">Мир ближе,<br>чем кажется<span>.</span></h1>
+        <p class="hero-copy" data-i18n="heroText">Города, маршруты и идеи для путешествий, которые хочется прожить.</p>
+        <a class="round-link" href="#destinations"><span data-i18n="heroButton">Исследовать направления</span><b>↘</b></a>
+      </div>
+      <div class="hero-note"><span>01 / 10</span><span data-i18n="heroNote">Путешествуй своим маршрутом</span></div>
+    </section>
+
+    <section class="intro section-wrap">
+      <p class="eyebrow" data-i18n="introEyebrow">GO A LITTLE FURTHER</p>
+      <div class="intro-row"><h2 data-i18n="introTitle">Не просто увидеть.<br><em>Почувствовать место.</em></h2><p data-i18n="introText">Собираем вдохновение и полезную информацию, чтобы планировать поездки было проще — от первого импульса до прогулки по незнакомым улицам.</p></div>
+    </section>
+
+    <section class="destinations section-wrap" id="destinations">
+      <div class="section-heading"><div><p class="eyebrow" data-i18n="destEyebrow">THE WORLD IS OPEN</p><h2 data-i18n="destTitle">Куда дальше?</h2></div><p data-i18n="destSub">Выбери настроение — мы подскажем направление.</p></div>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="all" data-i18n="filterAll">Все места</button>
+        <button class="filter" data-filter="culture" data-i18n="filterCulture">Культура</button>
+        <button class="filter" data-filter="sea" data-i18n="filterSea">Море</button>
+        <button class="filter" data-filter="food" data-i18n="filterFood">Еда и атмосфера</button>
+        <button class="filter" data-filter="city" data-i18n="filterCity">Городской ритм</button>
+      </div>
+      <div class="city-grid" id="cityGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="manifesto">
+      <div class="manifesto-photo"></div>
+      <div class="manifesto-copy"><p class="eyebrow light" data-i18n="manifestoEyebrow">TRAVEL IS PERSONAL</p><h2 data-i18n="manifestoTitle">Лучшие истории<br>начинаются с<br><em>любопытства.</em></h2><p data-i18n="manifestoText">Меньше шаблонов. Больше открытий. Твой темп, твой маршрут, твой Further.</p></div>
+    </section>
+
+    <section class="about section-wrap" id="about"><p class="eyebrow" data-i18n="aboutEyebrow">ABOUT FURTHER</p><div class="about-row"><h2 data-i18n="aboutTitle">Планируй меньше.<br><em>Открывай больше.</em></h2><p data-i18n="aboutText">Further — независимый путеводитель по городам и впечатлениям. Здесь собраны идеи, ориентиры по бюджету, локальные советы и места, с которых приятно начать знакомство.</p></div></section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#">further<span>.</span></a><p>© <span id="year"></span> Further. <span data-i18n="footer">Исследуй дальше.</span></p><a href="#top" data-i18n="backTop">Наверх ↑</a></footer>
+</body>
+</html>
